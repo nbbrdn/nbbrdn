@@ -1,0 +1,6 @@
+baseURL = 'https://bayborodin.ru/'
+languageCode = 'ru-ru'
+title = 'Лабораторный журнал'
+theme =  ["github.com/Mitrichius/hugo-theme-anubis"]
+[params]
+  author = 'Николай Байбородин'
