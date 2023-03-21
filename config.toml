@@ -4,3 +4,4 @@ title = 'Лабораторный журнал'
 theme =  ["github.com/Mitrichius/hugo-theme-anubis"]
 [params]
   author = 'Николай Байбородин'
+  readMore = true
