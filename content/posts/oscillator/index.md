@@ -12,10 +12,9 @@ draft: false
 
 Схему я взял из очень популярной книги "Электроника для начинающих" Чарльза Платта.
 
-{{ $img := resources.Get "platt-book.jpg" }}
-
 <div style="text-align:center">
-<img src="platt-book.jpg" alt="Германиевый транзистор МП-41" style="width:250px;"/>
+{{ $image := .Page.Resources.GetMatch "platt-book.jpg" }}
+<img src="{{ $image.RelPermalink }}" alt="Германиевый транзистор МП-41" style="width:250px;"/>
 </div>
 
 Самое существенное отличие от схем, которые я собирал в детстве - это транзисторы. В те далёкие года мультивибраторы собирали в основном, на транзисторах МП41 - самый популярный транзистор в 80 годах 20 века.
