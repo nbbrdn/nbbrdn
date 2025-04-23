@@ -32,6 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.108.0
+    outputs:
+      artifact-name: ${{ steps.upload.outputs.artifact-name }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -73,3 +75,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          artifact_name: ${{ needs.build.outputs.artifact-name }}
